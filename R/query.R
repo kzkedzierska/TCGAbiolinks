@@ -901,6 +901,7 @@ getMC3MAF <- function(){
     )
     maf$project_id <- df$proj[match(substr(maf$Tumor_Sample_Barcode,1,12),df$samples)] %>% as.character
     message(rep("-",100))
+    maf
 }
 
 
